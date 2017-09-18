@@ -74,10 +74,11 @@ export default class CirclePie extends Component{
         <text
           x={center}
           y={center}
-          dx="-.5em"
+          dx="0"
           dy=".4em"
           fill={this.props.labelColor}
-          fontSize={this.props.labelFontSize}>
+          fontSize={this.props.labelFontSize}
+          text-anchor="middle">
           {`${this.props.percent}%`}
         </text>
       </Chart>
